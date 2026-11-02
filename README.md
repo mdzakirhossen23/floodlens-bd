@@ -75,3 +75,7 @@ Public source is published in this repository, including code, data provenance, 
 AI development disclosure: OpenAI Codex assisted with the November 3 review, code corrections, Python implementations, historical-data integration, evaluation, documentation and checks. Earlier AI-tool usage is unknown and must be completed by the participant before submission.
 
 Official reference organizations: FFWC (https://ffwc.gov.bd/), BWDB (https://www.bwdb.gov.bd/), BMD (https://www.bmd.gov.bd/). No live integration or endorsement is claimed. Follow official guidance and local authorities for safety decisions.
+
+## Dashboard map
+
+The dashboard uses the Natural Earth 1:10m Bangladesh boundary, simplified for display with a local longitude scale adjustment. Source: [AshKyd/geojson-regions](https://github.com/AshKyd/geojson-regions/blob/cb0234d2e0a0bf392b79f742a6c2c8d9ca35e488/static/countries/10m/BGD.geojson.br), based on [Natural Earth public-domain data](https://www.naturalearthdata.com/about/terms-of-use/). Reusable asset: `assets/bangladesh-map.svg`. River strokes and animated markers are schematic illustrations, not measured river geometry or live hazard indicators.
