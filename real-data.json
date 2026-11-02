@@ -1,0 +1,543 @@
+{
+  "source": "FFWC/BWDB observations redistributed in World Bank RR_BGD_2025_385v2",
+  "source_url": "https://reproducibility.worldbank.org/catalog/374",
+  "station": "Bahurabad (station name as written in source analysis script)",
+  "observation_count": 80,
+  "first_date": "2024-06-15",
+  "last_date": "2024-09-13",
+  "missing_calendar_days": 11,
+  "valid_examples": 67,
+  "forecast_horizon_hours": 24,
+  "task": "Next-day gauge-level regression, not flood/drought classification",
+  "split": {
+    "train": {
+      "samples": 40,
+      "first_target": "2024-06-18",
+      "last_target": "2024-08-17"
+    },
+    "validation": {
+      "samples": 13,
+      "first_target": "2024-08-18",
+      "last_target": "2024-08-30"
+    },
+    "test": {
+      "samples": 14,
+      "first_target": "2024-08-31",
+      "last_target": "2024-09-13"
+    }
+  },
+  "alpha": 0.01,
+  "metrics": {
+    "ridge": {
+      "mae_m": 0.04010361039416388,
+      "rmse_m": 0.04680002377609825
+    },
+    "persistence": {
+      "mae_m": 0.03857142857142876,
+      "rmse_m": 0.048550415622761335
+    },
+    "linear_trend": {
+      "mae_m": 0.029285714285714297,
+      "rmse_m": 0.03712911833819164
+    }
+  },
+  "feature_order": [
+    "level_t",
+    "change_1d",
+    "change_2d"
+  ],
+  "model": {
+    "type": "Ridge regression",
+    "intercept": 0.2574661525102826,
+    "coefficients": [
+      0.9857328132133255,
+      1.6206135771069412,
+      -0.4383134245995097
+    ]
+  },
+  "sha256_csv": "57ae89008097a72b4b8494be56cdd5c3362ea198360f3273b179471330071190",
+  "versions": {
+    "python": "3.13.14",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit_learn": "1.9.1"
+  },
+  "observations": [
+    {
+      "date": "2024-06-15",
+      "water_level_m": 16.2
+    },
+    {
+      "date": "2024-06-16",
+      "water_level_m": 16.34
+    },
+    {
+      "date": "2024-06-17",
+      "water_level_m": 16.65
+    },
+    {
+      "date": "2024-06-18",
+      "water_level_m": 16.89
+    },
+    {
+      "date": "2024-06-19",
+      "water_level_m": 17.18
+    },
+    {
+      "date": "2024-06-20",
+      "water_level_m": 17.64
+    },
+    {
+      "date": "2024-06-21",
+      "water_level_m": 17.98
+    },
+    {
+      "date": "2024-06-22",
+      "water_level_m": 18.27
+    },
+    {
+      "date": "2024-06-23",
+      "water_level_m": 18.35
+    },
+    {
+      "date": "2024-06-24",
+      "water_level_m": 18.12
+    },
+    {
+      "date": "2024-06-25",
+      "water_level_m": 17.82
+    },
+    {
+      "date": "2024-06-26",
+      "water_level_m": 17.76
+    },
+    {
+      "date": "2024-06-27",
+      "water_level_m": 17.7
+    },
+    {
+      "date": "2024-06-28",
+      "water_level_m": 17.69
+    },
+    {
+      "date": "2024-06-29",
+      "water_level_m": 17.74
+    },
+    {
+      "date": "2024-06-30",
+      "water_level_m": 17.7
+    },
+    {
+      "date": "2024-07-01",
+      "water_level_m": 17.63
+    },
+    {
+      "date": "2024-07-02",
+      "water_level_m": 17.87
+    },
+    {
+      "date": "2024-07-03",
+      "water_level_m": 18.36
+    },
+    {
+      "date": "2024-07-04",
+      "water_level_m": 18.99
+    },
+    {
+      "date": "2024-07-05",
+      "water_level_m": 19.6
+    },
+    {
+      "date": "2024-07-06",
+      "water_level_m": 19.97
+    },
+    {
+      "date": "2024-07-07",
+      "water_level_m": 19.98
+    },
+    {
+      "date": "2024-07-08",
+      "water_level_m": 19.92
+    },
+    {
+      "date": "2024-07-09",
+      "water_level_m": 19.83
+    },
+    {
+      "date": "2024-07-10",
+      "water_level_m": 19.66
+    },
+    {
+      "date": "2024-07-11",
+      "water_level_m": 19.56
+    },
+    {
+      "date": "2024-07-12",
+      "water_level_m": 19.56
+    },
+    {
+      "date": "2024-07-13",
+      "water_level_m": 19.6
+    },
+    {
+      "date": "2024-07-14",
+      "water_level_m": 19.4
+    },
+    {
+      "date": "2024-07-15",
+      "water_level_m": 19.26
+    },
+    {
+      "date": "2024-07-16",
+      "water_level_m": 19.12
+    },
+    {
+      "date": "2024-07-17",
+      "water_level_m": 19.0
+    },
+    {
+      "date": "2024-07-18",
+      "water_level_m": 18.92
+    },
+    {
+      "date": "2024-07-25",
+      "water_level_m": 18.21
+    },
+    {
+      "date": "2024-07-26",
+      "water_level_m": 18.18
+    },
+    {
+      "date": "2024-07-30",
+      "water_level_m": 18.14
+    },
+    {
+      "date": "2024-07-31",
+      "water_level_m": 18.08
+    },
+    {
+      "date": "2024-08-01",
+      "water_level_m": 17.97
+    },
+    {
+      "date": "2024-08-02",
+      "water_level_m": 17.82
+    },
+    {
+      "date": "2024-08-03",
+      "water_level_m": 17.75
+    },
+    {
+      "date": "2024-08-04",
+      "water_level_m": 17.71
+    },
+    {
+      "date": "2024-08-05",
+      "water_level_m": 17.67
+    },
+    {
+      "date": "2024-08-06",
+      "water_level_m": 17.66
+    },
+    {
+      "date": "2024-08-08",
+      "water_level_m": 17.48
+    },
+    {
+      "date": "2024-08-09",
+      "water_level_m": 17.53
+    },
+    {
+      "date": "2024-08-11",
+      "water_level_m": 17.73
+    },
+    {
+      "date": "2024-08-12",
+      "water_level_m": 17.88
+    },
+    {
+      "date": "2024-08-13",
+      "water_level_m": 17.97
+    },
+    {
+      "date": "2024-08-14",
+      "water_level_m": 17.96
+    },
+    {
+      "date": "2024-08-15",
+      "water_level_m": 17.94
+    },
+    {
+      "date": "2024-08-16",
+      "water_level_m": 17.97
+    },
+    {
+      "date": "2024-08-17",
+      "water_level_m": 18.07
+    },
+    {
+      "date": "2024-08-18",
+      "water_level_m": 18.05
+    },
+    {
+      "date": "2024-08-19",
+      "water_level_m": 17.82
+    },
+    {
+      "date": "2024-08-20",
+      "water_level_m": 17.57
+    },
+    {
+      "date": "2024-08-21",
+      "water_level_m": 17.42
+    },
+    {
+      "date": "2024-08-22",
+      "water_level_m": 17.32
+    },
+    {
+      "date": "2024-08-23",
+      "water_level_m": 17.18
+    },
+    {
+      "date": "2024-08-24",
+      "water_level_m": 17.05
+    },
+    {
+      "date": "2024-08-25",
+      "water_level_m": 16.93
+    },
+    {
+      "date": "2024-08-26",
+      "water_level_m": 16.84
+    },
+    {
+      "date": "2024-08-27",
+      "water_level_m": 16.78
+    },
+    {
+      "date": "2024-08-28",
+      "water_level_m": 16.68
+    },
+    {
+      "date": "2024-08-29",
+      "water_level_m": 16.56
+    },
+    {
+      "date": "2024-08-30",
+      "water_level_m": 16.43
+    },
+    {
+      "date": "2024-08-31",
+      "water_level_m": 16.36
+    },
+    {
+      "date": "2024-09-01",
+      "water_level_m": 16.28
+    },
+    {
+      "date": "2024-09-02",
+      "water_level_m": 16.21
+    },
+    {
+      "date": "2024-09-03",
+      "water_level_m": 16.11
+    },
+    {
+      "date": "2024-09-04",
+      "water_level_m": 16.08
+    },
+    {
+      "date": "2024-09-05",
+      "water_level_m": 16.09
+    },
+    {
+      "date": "2024-09-06",
+      "water_level_m": 16.07
+    },
+    {
+      "date": "2024-09-07",
+      "water_level_m": 16.11
+    },
+    {
+      "date": "2024-09-08",
+      "water_level_m": 16.15
+    },
+    {
+      "date": "2024-09-09",
+      "water_level_m": 16.18
+    },
+    {
+      "date": "2024-09-10",
+      "water_level_m": 16.16
+    },
+    {
+      "date": "2024-09-11",
+      "water_level_m": 16.13
+    },
+    {
+      "date": "2024-09-12",
+      "water_level_m": 16.13
+    },
+    {
+      "date": "2024-09-13",
+      "water_level_m": 16.13
+    }
+  ],
+  "test_predictions": [
+    {
+      "input_date": "2024-08-30",
+      "target_date": "2024-08-31",
+      "level_t": 16.43,
+      "change_1d": -0.129999999999999,
+      "change_2d": -0.25,
+      "actual_m": 16.36,
+      "predicted_m": 16.351954864731198,
+      "persistence_m": 16.43,
+      "trend_m": 16.3
+    },
+    {
+      "input_date": "2024-08-31",
+      "target_date": "2024-09-01",
+      "level_t": 16.36,
+      "change_1d": -0.07000000000000028,
+      "change_2d": -0.1999999999999993,
+      "actual_m": 16.28,
+      "predicted_m": 16.358274711202704,
+      "persistence_m": 16.36,
+      "trend_m": 16.29
+    },
+    {
+      "input_date": "2024-09-01",
+      "target_date": "2024-09-02",
+      "level_t": 16.28,
+      "change_1d": -0.0799999999999983,
+      "change_2d": -0.14999999999999858,
+      "actual_m": 16.21,
+      "predicted_m": 16.241294279144597,
+      "persistence_m": 16.28,
+      "trend_m": 16.200000000000003
+    },
+    {
+      "input_date": "2024-09-02",
+      "target_date": "2024-09-03",
+      "level_t": 16.21,
+      "change_1d": -0.07000000000000028,
+      "change_2d": -0.14999999999999858,
+      "actual_m": 16.11,
+      "predicted_m": 16.18849911799073,
+      "persistence_m": 16.21,
+      "trend_m": 16.14
+    },
+    {
+      "input_date": "2024-09-03",
+      "target_date": "2024-09-04",
+      "level_t": 16.11,
+      "change_1d": -0.10000000000000142,
+      "change_2d": -0.1700000000000017,
+      "actual_m": 16.08,
+      "predicted_m": 16.050073697848177,
+      "persistence_m": 16.11,
+      "trend_m": 16.009999999999998
+    },
+    {
+      "input_date": "2024-09-04",
+      "target_date": "2024-09-05",
+      "level_t": 16.08,
+      "change_1d": -0.030000000000001137,
+      "change_2d": -0.13000000000000256,
+      "actual_m": 16.09,
+      "predicted_m": 16.116412126865285,
+      "persistence_m": 16.08,
+      "trend_m": 16.049999999999997
+    },
+    {
+      "input_date": "2024-09-05",
+      "target_date": "2024-09-06",
+      "level_t": 16.09,
+      "change_1d": 0.010000000000001563,
+      "change_2d": -0.019999999999999574,
+      "actual_m": 16.07,
+      "predicted_m": 16.142879521375754,
+      "persistence_m": 16.09,
+      "trend_m": 16.1
+    },
+    {
+      "input_date": "2024-09-06",
+      "target_date": "2024-09-07",
+      "level_t": 16.07,
+      "change_1d": -0.019999999999999574,
+      "change_2d": -0.00999999999999801,
+      "actual_m": 16.11,
+      "predicted_m": 16.07016332355228,
+      "persistence_m": 16.07,
+      "trend_m": 16.05
+    },
+    {
+      "input_date": "2024-09-07",
+      "target_date": "2024-09-08",
+      "level_t": 16.11,
+      "change_1d": 0.03999999999999915,
+      "change_2d": 0.019999999999999574,
+      "actual_m": 16.15,
+      "predicted_m": 16.193680047969245,
+      "persistence_m": 16.11,
+      "trend_m": 16.15
+    },
+    {
+      "input_date": "2024-09-08",
+      "target_date": "2024-09-09",
+      "level_t": 16.15,
+      "change_1d": 0.03999999999999915,
+      "change_2d": 0.0799999999999983,
+      "actual_m": 16.18,
+      "predicted_m": 16.206810555021807,
+      "persistence_m": 16.15,
+      "trend_m": 16.189999999999998
+    },
+    {
+      "input_date": "2024-09-09",
+      "target_date": "2024-09-10",
+      "level_t": 16.18,
+      "change_1d": 0.030000000000001137,
+      "change_2d": 0.07000000000000028,
+      "actual_m": 16.16,
+      "predicted_m": 16.224559537893136,
+      "persistence_m": 16.18,
+      "trend_m": 16.21
+    },
+    {
+      "input_date": "2024-09-10",
+      "target_date": "2024-09-11",
+      "level_t": 16.16,
+      "change_1d": -0.019999999999999574,
+      "change_2d": 0.010000000000001563,
+      "actual_m": 16.13,
+      "predicted_m": 16.15011300824949,
+      "persistence_m": 16.16,
+      "trend_m": 16.14
+    },
+    {
+      "input_date": "2024-09-11",
+      "target_date": "2024-09-12",
+      "level_t": 16.13,
+      "change_1d": -0.030000000000001137,
+      "change_2d": -0.05000000000000071,
+      "actual_m": 16.13,
+      "predicted_m": 16.13063369355799,
+      "persistence_m": 16.13,
+      "trend_m": 16.099999999999998
+    },
+    {
+      "input_date": "2024-09-12",
+      "target_date": "2024-09-13",
+      "level_t": 16.13,
+      "change_1d": 0.0,
+      "change_2d": -0.030000000000001137,
+      "actual_m": 16.13,
+      "predicted_m": 16.17048583237921,
+      "persistence_m": 16.13,
+      "trend_m": 16.13
+    }
+  ]
+}
